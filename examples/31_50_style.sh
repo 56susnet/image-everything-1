@@ -2,7 +2,7 @@
 
 TASK_ID="68ac5cef-81f6-48b5-a338-cc7ffacb255e"
 MODEL="John6666/nova-anime-xl-pony-v5-sdxl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/e5c5a6456d6fcdb4_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260130%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260130T112625Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b1041a40227d3ee9de063df2795f5b8ae9276d3ab29a8c4f4b7d720b2e6a2fed"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/7913c7f551df10f2_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T232218Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d7a47de32d645b07613be624d8f738b5c21e2caf55396cfd6b4127e2c2671af"
 MODEL_TYPE="sdxl"
 EXPECTED_REPO_NAME="John6666-nova-anime-xl-pony-v5-sdxl-style-31-50-1"
 
