@@ -201,16 +201,16 @@
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 2.2e-05,
                 "text_encoder_lr": 1e-06,
-                "lr_scheduler": "constant_with_warmup",
+                "lr_scheduler": "cosine",
                 "lr_warmup_steps": 20,
-                "min_snr_gamma": 7,
-                "noise_offset": 0.01,
+                "min_snr_gamma": 5,
+                "noise_offset": 0.02,
                 "noise_offset_type": "Original",
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.00015",
+                    "weight_decay=0.0",
                     "eps=1e-08"
                 ]
             },
