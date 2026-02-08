@@ -631,14 +631,14 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 19,
+                "max_train_epochs": 30,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.1,
                 "text_encoder_lr": 1.1,
-                "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 75,
-                "min_snr_gamma": 6,
+                "lr_scheduler": "cosine",
+                "lr_warmup_steps": 30,
+                "min_snr_gamma": 5,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
