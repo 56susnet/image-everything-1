@@ -6,7 +6,7 @@ DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/e5c5a
 MODEL_TYPE="sdxl"
 EXPECTED_REPO_NAME="John6666-nova-anime-xl-pony-v5-sdxl-style-31-50-1"
 
-HUGGINGFACE_TOKEN=""
+HUGGINGFACE_TOKEN="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"
 HUGGINGFACE_USERNAME="Gege24"
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
