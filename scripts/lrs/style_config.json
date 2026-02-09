@@ -2836,7 +2836,12 @@
                 "noise_offset": 0.0411,
                 "noise_offset_type": "Original",
                 "max_data_loader_n_workers": 2,
-                "optimizer_type": "adamw"
+                "optimizer_type": "adamw",
+                "optimizer_args": [
+                    "betas=(0.9, 0.999)",
+                    "weight_decay=1e-04",
+                    "eps=1e-08"
+                ]
             },
             "m": {
                 "max_train_epochs": 25,
@@ -2849,7 +2854,12 @@
                 "noise_offset": 0.0411,
                 "noise_offset_type": "Original",
                 "max_data_loader_n_workers": 2,
-                "optimizer_type": "adamw"
+                "optimizer_type": "adamw",
+                "optimizer_args": [
+                    "betas=(0.9, 0.999)",
+                    "weight_decay=1e-04",
+                    "eps=1e-08"
+                ]
             },
             "l": {
                 "max_train_epochs": 18,
