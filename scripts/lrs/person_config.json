@@ -635,7 +635,7 @@
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.15,
-                "text_encoder_lr": 1.1,
+                "text_encoder_lr": 1.15,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 20,
                 "min_snr_gamma": 5,
@@ -645,7 +645,7 @@
                     "decouple=True",
                     "d_coef=0.8",
                     "weight_decay=0.0",
-                    "use_bias_correction=false",
+                    "use_bias_correction=true",
                     "safeguard_warmup=True"
                 ]
             },
