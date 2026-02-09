@@ -634,18 +634,18 @@
                 "max_train_epochs": 40,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.1,
+                "unet_lr": 1.15,
                 "text_encoder_lr": 1.1,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 20,
-                "min_snr_gamma": 7,
+                "min_snr_gamma": 5,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.0",
+                    "d_coef=0.8",
                     "weight_decay=0.0",
-                    "use_bias_correction=True",
+                    "use_bias_correction=false",
                     "safeguard_warmup=True"
                 ]
             },
