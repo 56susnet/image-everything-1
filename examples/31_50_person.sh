@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb0"
+TASK_ID="22195013-7f79-499f-834b-3085b2b61bbf"
 MODEL="openart-custom/DynaVisionXL"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/f6e2ad0a8bb12148_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T132131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=016b6f3ba620ff22976789bd2c84e6bbf1e1fc47e7279084520fc93498ee5df3"
 MODEL_TYPE="sdxl"
