@@ -631,11 +631,11 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 35,
-                "train_batch_size": 6,
+                "max_train_epochs": 40,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.0,
-                "text_encoder_lr": 1.0,
+                "unet_lr": 1.1,
+                "text_encoder_lr": 1.1,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 20,
                 "min_snr_gamma": 7,
