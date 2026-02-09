@@ -631,13 +631,13 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 37,
+                "max_train_epochs": 40,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.1,
                 "text_encoder_lr": 1.1,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 30,
+                "lr_warmup_steps": 20,
                 "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
