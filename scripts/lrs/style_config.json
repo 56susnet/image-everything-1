@@ -2233,7 +2233,7 @@
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 25,
                 "min_snr_gamma": 6,
-                "noise_offset": 0.02,
+                "noise_offset": 0.032,
                 "noise_offset_type": "Original",
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "adamw",
