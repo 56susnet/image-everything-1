@@ -2230,7 +2230,7 @@
                 "gradient_accumulation_steps": 2,
                 "unet_lr": 2.42e-05,
                 "text_encoder_lr": 1e-06,
-                "lr_scheduler": "constant_with_warmup",
+                "lr_scheduler": "cosine",
                 "lr_warmup_steps": 25,
                 "min_snr_gamma": 7,
                 "noise_offset": 0.02,
