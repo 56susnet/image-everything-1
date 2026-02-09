@@ -644,7 +644,7 @@
                 "optimizer_args": [
                     "decouple=True",
                     "d_coef=0.8",
-                    "weight_decay=0.0",
+                    "weight_decay=0.01",
                     "use_bias_correction=true",
                     "safeguard_warmup=True"
                 ]
