@@ -631,22 +631,20 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 50,
+                "max_train_epochs": 40,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.1,
-                "text_encoder_lr": 1.1,
+                "unet_lr": 4e-5,
+                "text_encoder_lr": 2e-6,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 40,
-                "min_snr_gamma": 5,
+                "lr_warmup_steps": 20,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 6,
-                "optimizer_type": "prodigy",
+                "optimizer_type": "adamw",
                 "optimizer_args": [
-                    "decouple=True",
-                    "d_coef=0.5",
-                    "weight_decay=0.01",
-                    "use_bias_correction=True",
-                    "safeguard_warmup=True"
+                    "betas=(0.9, 0.999)",
+                    "weight_decay=0.0",
+                    "eps=1e-08"
                 ]
             },
             "xl": {
