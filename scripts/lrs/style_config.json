@@ -2807,21 +2807,21 @@
         },
         "a51427f9147c3c672edacd0c1070443e50d28df4c6f7d04cd7038fb68f1e8952": {
             "xs": {
-                "max_train_epochs": 38,
+                "max_train_epochs": 25,
                 "train_batch_size": 4,
-                "gradient_accumulation_steps": 2,
-                "unet_lr": 2.2e-05,
-                "text_encoder_lr": 1e-06,
-                "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 25,
-                "min_snr_gamma": 6,
-                "noise_offset": 0.02,
+                "gradient_accumulation_steps": 1,
+                "unet_lr": 3e-5,
+                "text_encoder_lr": 3e-6,
+                "lr_scheduler": "cosine",
+                "lr_warmup_steps": 20,
+                "min_snr_gamma": 7,
+                "noise_offset": 0.0411,
                 "noise_offset_type": "Original",
-                "max_data_loader_n_workers": 4,
+                "max_data_loader_n_workers": 2,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.00015",
+                    "weight_decay=1e-04",
                     "eps=1e-08"
                 ]
             },
