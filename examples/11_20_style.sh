@@ -2,7 +2,7 @@
 
 TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb0"
 MODEL="dataautogpt3/CALAMITY"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/efceb23b68597a88_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T130413Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eb8ea41fb6e1f2fe280fc88ff7c33608a8a658156e3b264345981a995d5210ef"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/a5e2618ce8c7d633_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T233809Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a3058ab3f0620a97c0ee489866ccc3ed0d830a4ff0bad00451a08ad7904b355"
 MODEL_TYPE="sdxl"
 EXPECTED_REPO_NAME="training_11-20_style_dancil"
 

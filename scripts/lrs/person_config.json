@@ -1546,11 +1546,11 @@
                 ]
             },
             "s": {
-                "max_train_epochs": 32,
+                "max_train_epochs": 36,
                 "train_batch_size": 6,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 0.9,
-                "text_encoder_lr": 0.9,
+                "unet_lr": 0.7,
+                "text_encoder_lr": 0.7,
                 "lr_scheduler": "constant",
                 "min_snr_gamma": 6,
                 "caption_dropout_rate": 0.05,
