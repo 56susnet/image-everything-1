@@ -31,8 +31,7 @@ class ConfigOptimizer:
             "caption_dropout_every_n_epochs": 3,
             "optimizer_args": [
                 "weight_decay=0.008",
-                "betas=(0.9,0.99)",
-                "foreach=True"
+                "betas=(0.9,0.99)"
             ]
         },
         "sdxl_person": {
@@ -42,8 +41,7 @@ class ConfigOptimizer:
                 "weight_decay=0.0005",
                 "use_bias_correction=True",
                 "safeguard_warmup=True",
-                "betas=(0.9,0.999)",
-                "foreach=True"
+                "betas=(0.9,0.999)"
             ],
             "unet_lr": 1.5,
             "text_encoder_lr": 0.8,
@@ -62,8 +60,7 @@ class ConfigOptimizer:
                 "weight_decay=0.0001",
                 "use_bias_correction=True",
                 "safeguard_warmup=True",
-                "betas=(0.9, 0.999)",
-                "foreach=True"
+                "betas=(0.9, 0.999)"
             ],
             "unet_lr": 1.0,
             "text_encoder_lr": 1.0,
