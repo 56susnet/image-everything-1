@@ -438,7 +438,9 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 23,
+                "max_train_epochs": 20,
+                "noise_offset": 0.0357,
+                "noise_offset_type": "Original",
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.0,
