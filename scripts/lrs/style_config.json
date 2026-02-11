@@ -2128,18 +2128,18 @@
         },
         "e7d0cc3356bd946337fb5e22fcff6132c7eb363abded9d32a99e42145a90309f": {
             "xs": {
-                "max_train_epochs": 38,
+                "max_train_epochs": 60,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 2,
-                "unet_lr": 4e-05,
-                "text_encoder_lr": 2e-06,
+                "unet_lr": 1e-4,
+                "text_encoder_lr": 5e-6,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 25,
                 "min_snr_gamma": 0,
                 "noise_offset": 0,
                 "noise_offset_type": "Original",
-                "network_dim": 256,
-                "network_alpha": 256,
+                "network_dim": 512,
+                "network_alpha": 512,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
