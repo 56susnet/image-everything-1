@@ -2535,8 +2535,8 @@
                 ]
             },
             "s": {
-                "max_train_epochs": 35,
-                "train_batch_size": 6,
+                "max_train_epochs": 36,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 3.08e-05,
                 "text_encoder_lr": 1.2e-06,
@@ -2573,7 +2573,7 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 19,
+                "max_train_epochs": 20,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 3.96e-05,
