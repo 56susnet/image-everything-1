@@ -727,7 +727,7 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 20,
+                "max_train_epochs": 22,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.21,
@@ -739,8 +739,8 @@
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.0",
-                    "weight_decay=0.01",
+                    "d_coef=1.15",
+                    "weight_decay=0.012",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
