@@ -1647,7 +1647,7 @@
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 2e-05,
-                "text_encoder_lr": 1e-06,
+                "text_encoder_lr": 2e-06,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 25,
                 "min_snr_gamma": 8,
