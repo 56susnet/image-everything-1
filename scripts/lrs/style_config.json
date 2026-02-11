@@ -1643,7 +1643,7 @@
         },
         "d6d232a2821b3708d356d95aa0b8cd553d54fde4a083d0d32f2718fafc5b134c": {
             "xs": {
-                "max_train_epochs": 30,
+                "max_train_epochs": 35,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 2e-05,
