@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 Automated Configuration Optimizer
@@ -31,7 +32,8 @@ class ConfigOptimizer:
             "caption_dropout_every_n_epochs": 3,
             "optimizer_args": [
                 "weight_decay=0.008",
-                "betas=(0.9,0.99)"
+                "betas=(0.9,0.99)",
+                "foreach=True"
             ]
         },
         "sdxl_person": {
@@ -41,7 +43,8 @@ class ConfigOptimizer:
                 "weight_decay=0.0005",
                 "use_bias_correction=True",
                 "safeguard_warmup=True",
-                "betas=(0.9,0.999)"
+                "betas=(0.9,0.999)",
+                "foreach=True"
             ],
             "unet_lr": 1.5,
             "text_encoder_lr": 0.8,
@@ -53,23 +56,23 @@ class ConfigOptimizer:
             "ema_decay": 0.9999
         },
         "sdxl_style": {
-            "optimizer_type": "prodigy",
+            "optimizer_type": "AdamW8bit",
             "optimizer_args": [
-                "decouple=True",
-                "d_coef=1.0",
-                "weight_decay=0.0001",
-                "use_bias_correction=True",
-                "safeguard_warmup=True",
-                "betas=(0.9, 0.999)"
+                "betas=(0.9, 0.999)",
+                "weight_decay=5e-05",
+                "eps=1e-08",
+                "foreach=True"
             ],
-            "unet_lr": 1.0,
-            "text_encoder_lr": 1.0,
-            "lr_scheduler": "constant",
+            "unet_lr": 3e-5,
+            "text_encoder_lr": 3e-6,
+            "lr_scheduler": "cosine_with_restarts",
             "lr_warmup_steps": 50,
-            "noise_offset_type": "Original",
-            "noise_offset": 0.0357,
-            "caption_dropout_rate": 0.1,
-            "caption_dropout_every_n_epochs": 3,
+            "lr_scheduler_num_cycles": 2,
+            "noise_offset_type": "Multires",
+            "multires_noise_iterations": 8,
+            "multires_noise_discount": 0.3,
+            "caption_dropout_rate": 0.15,
+            "caption_dropout_every_n_epochs": 2,
             "use_ema": True,
             "ema_decay": 0.9999
         }
@@ -239,4 +242,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
