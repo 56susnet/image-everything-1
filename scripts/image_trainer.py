@@ -293,9 +293,12 @@ def create_config(task_id, model_path, model_name, model_type, expected_repo_nam
             else:
                 network_config = config_mapping[network_config_person[model_name]]
 
-            config["network_dim"] = network_config["network_dim"]
-            config["network_alpha"] = network_config["network_alpha"]
-            config["network_args"] = network_config["network_args"]
+            if config.get("network_dim", -1) == -1:
+                config["network_dim"] = network_config["network_dim"]
+            if config.get("network_alpha", -1) == -1:
+                config["network_alpha"] = network_config["network_alpha"]
+            if not config.get("network_args"):
+                config["network_args"] = network_config["network_args"]
 
 
         # Old size config search removed as requested

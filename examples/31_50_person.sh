@@ -1,13 +1,13 @@
 #!/bin/bash
 
-TASK_ID=""
-MODEL="John6666/nova-anime-xl-pony-v5-sdxl"
+TASK_ID="a52092a4-8ed3-4373-90b4-7347083c7fa9"
+MODEL="GHArt/Lah_Mysterious_SDXL_V4.0_xl_fp16"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/f6e2ad0a8bb12148_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T132131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=016b6f3ba620ff22976789bd2c84e6bbf1e1fc47e7279084520fc93498ee5df3"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="John6666-nova-anime-xl-pony-v5-sdxl-person-31-50-1"
+EXPECTED_REPO_NAME="train-person-31-50-utah"
 
-HUGGINGFACE_TOKEN=""
-HUGGINGFACE_USERNAME="Gege24"
+HUGGINGFACE_TOKEN="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"
+HUGGINGFACE_USERNAME="Jordansky"
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"
