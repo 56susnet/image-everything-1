@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="60f247f4-a6ac-415e-a0da-34cf70dac197"
-MODEL="Lykon/art-diffusion-xl-0.9"
+MODEL=""
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/a5e2618ce8c7d633_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T233809Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a3058ab3f0620a97c0ee489866ccc3ed0d830a4ff0bad00451a08ad7904b355"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="Lykon-art-diffusion-xl-0.9-style-11-20-1"
+EXPECTED_REPO_NAME=""
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
