@@ -438,13 +438,12 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 19,
-                "train_batch_size": 10,
+                "max_train_epochs": 30,
+                "train_batch_size": 6,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.1,
-                "text_encoder_lr": 1.1,
-                "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 75,
+                "unet_lr": 1.0,
+                "text_encoder_lr": 1.0,
+                "lr_scheduler": "constant",
                 "min_snr_gamma": 6,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
