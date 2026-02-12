@@ -7,7 +7,7 @@ MODEL_TYPE="sdxl"
 EXPECTED_REPO_NAME="openart-custom-DynaVisionXL-style-1-10-1"
 
 HUGGINGFACE_TOKEN=""
-HUGGINGFACE_USERNAME=""
+HUGGINGFACE_USERNAME="Gege24"
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 
 CHECKPOINTS_DIR="$(pwd)/secure_checkpoints"
