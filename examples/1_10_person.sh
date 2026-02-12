@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID=""
-MODEL="John6666/nova-anime-xl-pony-v5-sdxl"
+MODEL=""
 DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="John6666-nova-anime-xl-pony-v5-sdxl-person-1-10-1"
+EXPECTED_REPO_NAME=""
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
