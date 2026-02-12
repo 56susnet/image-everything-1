@@ -1,10 +1,11 @@
 #!/bin/bash
 
-TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb0"
-MODEL="dataautogpt3/CALAMITY"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/5857f8a12db5dbcf_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T024013Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fbd19abc9094c7b68d2bed8599ed86841d214983125d81c5d652f36809c9eb02"
+
+TASK_ID=""
+MODEL=""
+DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="training_0-10_style_dancil"
+EXPECTED_REPO_NAME=""
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
