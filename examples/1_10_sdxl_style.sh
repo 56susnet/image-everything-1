@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="d3e8949b-3bfa-422f-8a28-adad72f33d08"
-MODEL="John6666/nova-anime-xl-pony-v5-sdxl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/efceb23b68597a88_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T130413Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eb8ea41fb6e1f2fe280fc88ff7c33608a8a658156e3b264345981a995d5210ef"
+TASK_ID="b69fa594-35ea-432f-82f1-3a4efcddd7de"
+MODEL="openart-custom/DynaVisionXL"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/5857f8a12db5dbcf_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T024013Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fbd19abc9094c7b68d2bed8599ed86841d214983125d81c5d652f36809c9eb02"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="openart-custom-DynaVisionXL-style-21-30-1"
+EXPECTED_REPO_NAME="openart-custom-DynaVisionXL-style-1-10-1"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
