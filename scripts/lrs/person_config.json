@@ -1908,7 +1908,7 @@
         },
         "87a20676586c53891563895be0408c6109b83f1d891700dd6ff6c02a25cd6c47": {
             "xs": {
-                "max_train_epochs": 30,
+                "max_train_epochs": 38,
                 "train_batch_size": 5,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.0,
