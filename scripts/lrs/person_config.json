@@ -1920,8 +1920,8 @@
                 "optimizer_args": [
                     "decouple=True",
                     "d_coef=1.0",
-                    "weight_decay=0.005",
-                    "use_bias_correction=True",
+                    "weight_decay=0.01",
+                    "use_bias_correction=False",
                     "safeguard_warmup=True"
                 ]
             },
