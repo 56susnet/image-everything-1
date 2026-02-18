@@ -1908,11 +1908,11 @@
         },
         "87a20676586c53891563895be0408c6109b83f1d891700dd6ff6c02a25cd6c47": {
             "xs": {
-                "max_train_epochs": 35,
+                "max_train_epochs": 30,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 0.9,
-                "text_encoder_lr": 0.9,
+                "unet_lr": 1.0,
+                "text_encoder_lr": 1.0,
                 "lr_scheduler": "constant",
                 "min_snr_gamma": 5,
                 "max_data_loader_n_workers": 4,
@@ -1920,7 +1920,7 @@
                 "optimizer_args": [
                     "decouple=True",
                     "d_coef=1.0",
-                    "weight_decay=0.015",
+                    "weight_decay=0.005",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
