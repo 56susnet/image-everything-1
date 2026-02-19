@@ -1909,31 +1909,31 @@
         "87a20676586c53891563895be0408c6109b83f1d891700dd6ff6c02a25cd6c47": {
             "xs": {
                 "max_train_epochs": 30,
-                "train_batch_size": 2,
-                "gradient_accumulation_steps": 2,
-                "unet_lr": 1.0,
-                "text_encoder_lr": 1.0,
+                "train_batch_size": 5,
+                "gradient_accumulation_steps": 1,
+                "unet_lr": 0.95,
+                "text_encoder_lr": 0.95,
                 "lr_scheduler": "constant",
-                "min_snr_gamma": 5,
-                "max_data_loader_n_workers": 4,
+                "min_snr_gamma": 6,
+                "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.0",
+                    "d_coef=1.15",
                     "weight_decay=0.01",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
             },
             "s": {
-                "max_train_epochs": 52,
-                "train_batch_size": 8,
+                "max_train_epochs": 32,
+                "train_batch_size": 5,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.0,
-                "text_encoder_lr": 1.0,
+                "unet_lr": 0.95,
+                "text_encoder_lr": 0.95,
                 "lr_scheduler": "constant",
-                "min_snr_gamma": 7,
-                "max_data_loader_n_workers": 4,
+                "min_snr_gamma": 6,
+                "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
@@ -1944,15 +1944,33 @@
                 ]
             },
             "m": {
-                "max_train_epochs": 40,
-                "train_batch_size": 8,
+                "max_train_epochs": 34,
+                "train_batch_size": 6,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.05,
-                "text_encoder_lr": 1.05,
+                "unet_lr": 0.97,
+                "text_encoder_lr": 0.97,
+                "lr_scheduler": "constant",
+                "min_snr_gamma": 6,
+                "max_data_loader_n_workers": 6,
+                "optimizer_type": "prodigy",
+                "optimizer_args": [
+                    "decouple=True",
+                    "d_coef=1.15",
+                    "weight_decay=0.01",
+                    "use_bias_correction=True",
+                    "safeguard_warmup=True"
+                ]
+            },
+            "l": {
+                "max_train_epochs": 30,
+                "train_batch_size": 7,
+                "gradient_accumulation_steps": 1,
+                "unet_lr": 1.0,
+                "text_encoder_lr": 1.0,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 50,
-                "min_snr_gamma": 7,
-                "max_data_loader_n_workers": 4,
+                "min_snr_gamma": 6,
+                "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
@@ -1962,39 +1980,20 @@
                     "safeguard_warmup=True"
                 ]
             },
-            "l": {
-                "max_train_epochs": 30,
-                "train_batch_size": 10,
-                "gradient_accumulation_steps": 1,
-                "unet_lr": 1.1,
-                "text_encoder_lr": 1.1,
-                "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 75,
-                "min_snr_gamma": 7,
-                "max_data_loader_n_workers": 6,
-                "optimizer_type": "prodigy",
-                "optimizer_args": [
-                    "decouple=True",
-                    "d_coef=1.0",
-                    "weight_decay=0.01",
-                    "use_bias_correction=True",
-                    "safeguard_warmup=True"
-                ]
-            },
             "xl": {
-                "max_train_epochs": 20,
-                "train_batch_size": 12,
+                "max_train_epochs": 28,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.15,
-                "text_encoder_lr": 1.15,
+                "unet_lr": 1.0,
+                "text_encoder_lr": 1.0,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 100,
-                "min_snr_gamma": 7,
+                "lr_warmup_steps": 50,
+                "min_snr_gamma": 6,
                 "max_data_loader_n_workers": 8,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=0.9",
+                    "d_coef=1.1",
                     "weight_decay=0.01",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
