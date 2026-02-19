@@ -1914,12 +1914,12 @@
                 "unet_lr": 0.95,
                 "text_encoder_lr": 0.95,
                 "lr_scheduler": "constant",
-                "min_snr_gamma": 7,
-                "max_data_loader_n_workers": 4,
+                "min_snr_gamma": 6,
+                "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.1",
+                    "d_coef=1.15",
                     "weight_decay=0.01",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
