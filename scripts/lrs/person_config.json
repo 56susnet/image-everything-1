@@ -1719,19 +1719,20 @@
         },
         "9177dab379e14f76c500ad2246352fd9387f11e2f57e2973bf9ada4d7cd4c962": {
             "xs": {
-                "max_train_epochs": 36,
+                "max_train_epochs": 40,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 2,
-                "unet_lr": 0.8,
-                "text_encoder_lr": 0.8,
-                "lr_scheduler": "constant",
-                "min_snr_gamma": 6,
+                "unet_lr": 1.0,
+                "text_encoder_lr": 1.0,
+                "lr_scheduler": "constant_with_warmup",
+                "lr_warmup_steps": 25,
+                "min_snr_gamma": 5,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.3",
-                    "weight_decay=0.015",
+                    "d_coef=1.0",
+                    "weight_decay=0.02",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
@@ -1774,7 +1775,7 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 19,
+                "max_train_epochs": 24,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.1,
@@ -1786,8 +1787,8 @@
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.0",
-                    "weight_decay=0.01",
+                    "d_coef=1.1",
+                    "weight_decay=0.02",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
