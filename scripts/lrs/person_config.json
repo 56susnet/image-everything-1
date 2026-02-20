@@ -1,4 +1,4 @@
-{
+﻿{
     "default": {},
     "data": {
         "b89415872c1864f2a6ccccb34d6744021aa58eec13ab9109d4fa53931156ead4": {
@@ -1719,20 +1719,24 @@
         },
         "9177dab379e14f76c500ad2246352fd9387f11e2f57e2973bf9ada4d7cd4c962": {
             "xs": {
-                "max_train_epochs": 40,
+                "max_train_epochs": 42,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 2,
-                "unet_lr": 1.0,
-                "text_encoder_lr": 1.0,
+                "unet_lr": 0.85,
+                "text_encoder_lr": 0.85,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 25,
+                "lr_warmup_steps": 30,
                 "min_snr_gamma": 5,
+                "caption_dropout_rate": 0.05,
+                "loss_type": "huber",
+                "huber_c": 0.1,
+                "huber_schedule": "snr",
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.0",
-                    "weight_decay=0.02",
+                    "d_coef=1.5",
+                    "weight_decay=0.015",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
@@ -1775,20 +1779,24 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 30,
+                "max_train_epochs": 22,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.2,
-                "text_encoder_lr": 1.2,
+                "unet_lr": 1.05,
+                "text_encoder_lr": 1.05,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 75,
+                "lr_warmup_steps": 60,
                 "min_snr_gamma": 5,
+                "caption_dropout_rate": 0.05,
+                "loss_type": "huber",
+                "huber_c": 0.1,
+                "huber_schedule": "snr",
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.2",
-                    "weight_decay=0.02",
+                    "d_coef=1.35",
+                    "weight_decay=0.012",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
