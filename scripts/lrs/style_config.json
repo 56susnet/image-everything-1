@@ -929,11 +929,11 @@
             "l": {
                 "max_train_epochs": 18,
                 "train_batch_size": 10,
-                "gradient_accumulation_steps": 1,
-                "unet_lr": 3.0e-05,
+                "gradient_accumulation_steps": 2,
+                "unet_lr": 2.8e-05,
                 "text_encoder_lr": 1.9e-06,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 75,
+                "lr_warmup_steps": 60,
                 "min_snr_gamma": 5,
                 "noise_offset": 0.04,
                 "noise_offset_type": "Original",
@@ -944,7 +944,7 @@
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.0007",
+                    "weight_decay=0.001",
                     "eps=1e-08"
                 ]
             },
