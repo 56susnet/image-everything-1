@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID=""
-MODEL=""
+MODEL="Realism-engine2-xl"
 DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME=""
+EXPECTED_REPO_NAME="21_30_person-Realism-engine2-xl-zay-1"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""

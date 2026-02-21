@@ -1,12 +1,12 @@
 #!/bin/bash
 
-TASK_ID="test"
-MODEL="mhnakif/fluxunchained-dev"
-DATASET_ZIP="https://gradients.s3.eu-north-1.amazonaws.com/88a183b11c36a018_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVVZOOA7SA4UOFLPI%2F20251221%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20251221T220851Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=37becbbd98b4f2fd5cce61e7fa0a200a8747b6b407e2a93414f29f21ca7da2b7"
+TASK_ID=""
+MODEL=""
+DATASET_ZIP=""
 MODEL_TYPE="flux"
 EXPECTED_REPO_NAME="test_flux"
 
-HUGGINGFACE_TOKEN=""
+HUGGINGFACE_TOKEN=""    
 HUGGINGFACE_USERNAME=""
 LOCAL_FOLDER="/app/checkpoints/$TASK_ID/$EXPECTED_REPO_NAME"
 

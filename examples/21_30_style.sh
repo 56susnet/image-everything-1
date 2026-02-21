@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="dd3686c5-6296-4fe1-b8e1-7f18ca2f1c70"
-MODEL="zenless-lab/sdxl-anything-xl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/efceb23b68597a88_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T130413Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eb8ea41fb6e1f2fe280fc88ff7c33608a8a658156e3b264345981a995d5210ef"
+TASK_ID=""
+MODEL="Realism-engine2-xl"
+DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="21-30-style-zenless-zay-2"
+EXPECTED_REPO_NAME="21_30_style-Realism-engine2-xl-zay-1"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Gege24"
