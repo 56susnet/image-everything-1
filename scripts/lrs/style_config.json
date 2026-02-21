@@ -927,13 +927,13 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 20,
+                "max_train_epochs": 18,
                 "train_batch_size": 10,
-                "gradient_accumulation_steps": 4,
-                "unet_lr": 1.8e-05,
+                "gradient_accumulation_steps": 2,
+                "unet_lr": 2.0e-05,
                 "text_encoder_lr": 1.9e-06,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 40,
+                "lr_warmup_steps": 50,
                 "min_snr_gamma": 5,
                 "noise_offset": 0.02,
                 "noise_offset_type": "Original",
