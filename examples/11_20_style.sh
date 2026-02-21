@@ -1,10 +1,14 @@
 #!/bin/bash
 
-TASK_ID="60f247f4-a6ac-415e-a0da-34cf70dac197"
-MODEL="GraydientPlatformAPI/realism-engine2-xl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/a5e2618ce8c7d633_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T233809Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a3058ab3f0620a97c0ee489866ccc3ed0d830a4ff0bad00451a08ad7904b355"
+TASK_ID="363b736b-7b79-4f22-a6e8-cfb34450e3ef"
+MODEL="mann-e/Mann-E_Dreams"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/9f8598456982157f_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260214%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260214T001218Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=54e7fe5969fa3efe449bbed65048782185a3654242a9b0b5e71a87935c169909"
 MODEL_TYPE="sdxl"
+<<<<<<< HEAD
 EXPECTED_REPO_NAME="11-20-realism-engine2-xl-jav"
+=======
+EXPECTED_REPO_NAME="11-20-mann-e-dreams-style-jav"
+>>>>>>> fe6391e (update examples)
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Gege24"
@@ -24,4 +28,8 @@ echo "Starting image training..."
 docker run --rm --gpus all   --security-opt=no-new-privileges   --cap-drop=ALL   --memory=32g   --cpus=8   --network none   --env TRANSFORMERS_CACHE=/cache/hf_cache   --volume "$CHECKPOINTS_DIR:/cache:rw"   --volume "$OUTPUTS_DIR:/app/checkpoints/:rw"   --name image-trainer-example   standalone-image-trainer   --task-id "$TASK_ID"   --model "$MODEL"   --dataset-zip "$DATASET_ZIP"   --model-type "$MODEL_TYPE"   --expected-repo-name "$EXPECTED_REPO_NAME"   --hours-to-complete 1
 
 echo "Uploading model to HuggingFace..."
+<<<<<<< HEAD
 docker run --rm --gpus all   --volume "$OUTPUTS_DIR:/app/checkpoints/:rw"   --env HUGGINGFACE_TOKEN="$HUGGINGFACE_TOKEN"   --env HUGGINGFACE_USERNAME="$HUGGINGFACE_USERNAME"   --env TASK_ID="$TASK_ID"   --env EXPECTED_REPO_NAME="$EXPECTED_REPO_NAME"   --env LOCAL_FOLDER="$LOCAL_FOLDER"   --env HF_REPO_SUBFOLDER="checkpoints"   --name hf-uploader   hf-uploader
+=======
+docker run --rm --gpus all   --volume "$OUTPUTS_DIR:/app/checkpoints/:rw"   --env HUGGINGFACE_TOKEN="$HUGGINGFACE_TOKEN"   --env HUGGINGFACE_USERNAME="$HUGGINGFACE_USERNAME"   --env TASK_ID="$TASK_ID"   --env EXPECTED_REPO_NAME="$EXPECTED_REPO_NAME"   --env LOCAL_FOLDER="$LOCAL_FOLDER"   --env HF_REPO_SUBFOLDER="checkpoints"   --name hf-uploader   hf-uploader 
+>>>>>>> fe6391e (update examples)

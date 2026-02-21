@@ -1,10 +1,14 @@
 #!/bin/bash
 
-TASK_ID="8df630b1-96c2-45f0-a321-8c459bc2e5cc"
-MODEL="GraydientPlatformAPI/realism-engine2-xl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/deb8db1829b6fb3c_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T225358Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=acb65575e0deb90aa8205e227783454b038c7f0f64abdfff7d685b94d3ba7ce8"
+TASK_ID="363b736b-7b79-4f22-a6e8-cfb34450e3ef"
+MODEL="mann-e/Mann-E_Dreams"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/9f8598456982157f_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260214%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260214T001218Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=54e7fe5969fa3efe449bbed65048782185a3654242a9b0b5e71a87935c169909"
 MODEL_TYPE="sdxl"
+<<<<<<< HEAD
 EXPECTED_REPO_NAME="11-20-realism-engine2-xl-jav"
+=======
+EXPECTED_REPO_NAME="11-20-mann-e-dreams-person-jav"
+>>>>>>> fe6391e (update examples)
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Gege24"

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="ed7f864c-634a-4a0c-a848-f8753d0f39d6"
-MODEL="GraydientPlatformAPI/realism-engine2-xl"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/7913c7f551df10f2_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260205%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260205T232218Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d7a47de32d645b07613be624d8f738b5c21e2caf55396cfd6b4127e2c2671af"
+TASK_ID="363b736b-7b79-4f22-a6e8-cfb34450e3ef"
+MODEL="mann-e/Mann-E_Dreams"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/9f8598456982157f_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260214%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260214T001218Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=54e7fe5969fa3efe449bbed65048782185a3654242a9b0b5e71a87935c169909"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="31-50-realism-engine2-xl-jav"
+EXPECTED_REPO_NAME="31-50-mann-e-dreams-style-jav"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Gege24"
