@@ -1,0 +1,45 @@
+{
+    "default": {
+        "xs": {
+            "train.steps": 1500,
+            "train.lr": 0.0001,
+            "train.batch_size": 1,
+            "train.gradient_accumulation": 2,
+            "network.linear": 64,
+            "network.linear_alpha": 64
+        },
+        "s": {
+            "train.steps": 2000,
+            "train.lr": 0.0001,
+            "train.batch_size": 1,
+            "train.gradient_accumulation": 1,
+            "network.linear": 64,
+            "network.linear_alpha": 64
+        },
+        "m": {
+            "train.steps": 2500,
+            "train.lr": 0.0001,
+            "train.batch_size": 1,
+            "train.gradient_accumulation": 1,
+            "network.linear": 128,
+            "network.linear_alpha": 128
+        },
+        "l": {
+            "train.steps": 3000,
+            "train.lr": 0.00012,
+            "train.batch_size": 1,
+            "train.gradient_accumulation": 1,
+            "network.linear": 128,
+            "network.linear_alpha": 128
+        },
+        "xl": {
+            "train.steps": 4000,
+            "train.lr": 0.00015,
+            "train.batch_size": 1,
+            "train.gradient_accumulation": 1,
+            "network.linear": 128,
+            "network.linear_alpha": 128
+        }
+    },
+    "data": {}
+}

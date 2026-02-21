@@ -91,11 +91,15 @@ def load_lrs_config(model_type: str, is_style: bool) -> dict:
 
     if model_type == "flux":
         config_file = os.path.join(config_dir, "flux.json")
+    elif model_type == "qwen-image":
+        config_file = os.path.join(config_dir, "qwen_image_config.json")
+    elif model_type == "z-image":
+        config_file = os.path.join(config_dir, "zimage_config.json")
     elif is_style:
         config_file = os.path.join(config_dir, "style_config.json")
     else:
         config_file = os.path.join(config_dir, "person_config.json")
-    
+
     try:
         with open(config_file, 'r') as f:
             return json.load(f)
@@ -112,27 +116,61 @@ def create_config(task_id, model_path, model_name, model_type, expected_repo_nam
     config_template_path, is_style = train_paths.get_image_training_config_template_path(model_type, train_data_dir)
 
     is_ai_toolkit = model_type in [ImageModelType.Z_IMAGE.value, ImageModelType.QWEN_IMAGE.value]
-    
+
     if is_ai_toolkit:
         with open(config_template_path, "r") as file:
             config = yaml.safe_load(file)
+
+        dataset_size = 0
+        if os.path.exists(train_data_dir):
+            dataset_size = count_images_in_directory(train_data_dir)
+            if dataset_size > 0:
+                print(f"Counted {dataset_size} images in training directory", flush=True)
+
+        lrs_config = load_lrs_config(model_type, False)
+        if lrs_config:
+            model_hash = hash_model(model_name)
+            lrs_settings = get_config_for_model(lrs_config, model_hash)
+            if lrs_settings:
+                size_key = None
+                if 1 <= dataset_size <= 10:
+                    size_key = "xs"
+                elif 11 <= dataset_size <= 20:
+                    size_key = "s"
+                elif 21 <= dataset_size <= 30:
+                    size_key = "m"
+                elif 31 <= dataset_size <= 50:
+                    size_key = "l"
+                elif 51 <= dataset_size <= 1000:
+                    size_key = "xl"
+
+                if size_key and size_key in lrs_settings:
+                    print(f"Applying LRS config for size '{size_key}'", flush=True)
+                    apply_nested_lrs_to_yaml(config, lrs_settings[size_key])
+                elif size_key:
+                    print(f"Warning: No size config '{size_key}' found for model '{model_name}'.", flush=True)
+            else:
+                print(f"Warning: No LRS config found for model '{model_name}', using defaults.", flush=True)
+        else:
+            print("Warning: Could not load LRS configuration, using default values.", flush=True)
+
         if 'config' in config and 'process' in config['config']:
             for process in config['config']['process']:
                 if 'model' in process:
                     process['model']['name_or_path'] = model_path
-                    if 'training_folder' in process:
-                        output_dir = train_paths.get_checkpoints_output_path(task_id, expected_repo_name or "output")
-                        if not os.path.exists(output_dir):
-                            os.makedirs(output_dir, exist_ok=True)
-                        process['training_folder'] = output_dir
-                
+                if 'training_folder' in process:
+                    output_dir = train_paths.get_checkpoints_output_path(task_id, expected_repo_name or "output")
+                    if not os.path.exists(output_dir):
+                        os.makedirs(output_dir, exist_ok=True)
+                    process['training_folder'] = output_dir
+
                 if 'datasets' in process:
                     for dataset in process['datasets']:
                         dataset['folder_path'] = train_data_dir
 
                 if trigger_word:
                     process['trigger_word'] = trigger_word
-        
+
         config_path = os.path.join(train_cst.IMAGE_CONTAINER_CONFIG_SAVE_PATH, f"{task_id}.yaml")
         save_config(config, config_path)
         print(f"Created ai-toolkit config at {config_path}", flush=True)
@@ -374,7 +412,23 @@ def run_training(model_type, config_path):
 def hash_model(model: str) -> str:
     model_bytes = model.encode('utf-8')
     hashed = hashlib.sha256(model_bytes).hexdigest()
-    return hashed 
+    return hashed
+
+def apply_nested_lrs_to_yaml(config: dict, lrs_settings: dict):
+    if 'config' not in config or 'process' not in config['config']:
+        return
+
+    for process in config['config']['process']:
+        for key, value in lrs_settings.items():
+            parts = key.split('.', 1)
+            if len(parts) == 2:
+                section, param = parts
+                if section in process and isinstance(process[section], dict):
+                    process[section][param] = value
+                else:
+                    print(f"Warning: Section '{section}' not found in process config, skipping key '{key}'.", flush=True)
+            else:
+                process[key] = value
 
 async def main():
     print("---STARTING IMAGE TRAINING SCRIPT---", flush=True)
