@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TASK_ID=""
-MODEL="Realism-engine2-xl"
-DATASET_ZIP=""
+TASK_ID="adcda8d7-d391-4efa-aca0-da201222980e"
+MODEL="GraydientPlatformAPI/realism-engine2-xl"
+DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/ede838a94e9f4742_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T152917Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c27860d7f1bbb1ff73fb584862daf04e958662c0207864cc746630e34a588877"
 MODEL_TYPE="sdxl"
 EXPECTED_REPO_NAME="1-style-Realism-engine2-xl-zay-1"
 
