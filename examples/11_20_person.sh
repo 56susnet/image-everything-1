@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TASK_ID="363b736b-7b79-4f22-a6e8-cfb34450e3ef"
-MODEL="mann-e/Mann-E_Dreams"
+MODEL="GraydientPlatformAPI/realism-engine2-xl"
 DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/3dddfcba1eb108d6_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T224012Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ec97e746134d66ce391fc506cff0be9024dce7c33cd5d6ca298d0d8ff5e8c9d6"
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="11-20-mann-e-dreams-person-jav"
+EXPECTED_REPO_NAME="11-20-realism-engine2-xl-jav"
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME="Gege24"
