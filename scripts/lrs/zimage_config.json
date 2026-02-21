@@ -2,8 +2,8 @@
     "data": {
         "17eb2c6bb37a0b176605f6d1b778e113e2cae2c51bfcafb8ba1e7c35d86736f6": {
             "xs": {
-                "train.steps": 1000,
-                "train.lr": 0.0001,
+                "train.steps": 1500,
+                "train.lr": 0.00008,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 2,
                 "network.linear": 16,
@@ -12,16 +12,6 @@
                 "network.conv_alpha": 8
             },
             "s": {
-                "train.steps": 1500,
-                "train.lr": 0.0001,
-                "train.batch_size": 1,
-                "train.gradient_accumulation": 1,
-                "network.linear": 32,
-                "network.linear_alpha": 32,
-                "network.conv": 16,
-                "network.conv_alpha": 16
-            },
-            "m": {
                 "train.steps": 2000,
                 "train.lr": 0.0001,
                 "train.batch_size": 1,
@@ -31,18 +21,28 @@
                 "network.conv": 16,
                 "network.conv_alpha": 16
             },
-            "l": {
+            "m": {
                 "train.steps": 2500,
+                "train.lr": 0.0001,
+                "train.batch_size": 1,
+                "train.gradient_accumulation": 1,
+                "network.linear": 32,
+                "network.linear_alpha": 32,
+                "network.conv": 16,
+                "network.conv_alpha": 16
+            },
+            "l": {
+                "train.steps": 3000,
                 "train.lr": 0.00012,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
                 "network.linear": 64,
                 "network.linear_alpha": 64,
-                "network.conv": 16,
-                "network.conv_alpha": 16
+                "network.conv": 32,
+                "network.conv_alpha": 32
             },
             "xl": {
-                "train.steps": 3000,
+                "train.steps": 4000,
                 "train.lr": 0.00015,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,

@@ -2,15 +2,15 @@
     "data": {
         "f5eea20a2dbc9e3de97243d3ff8935c349fbb4637e4378e43ed2f57ba379cbb7": {
             "xs": {
-                "train.steps": 1500,
-                "train.lr": 0.0001,
+                "train.steps": 1200,
+                "train.lr": 0.00008,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 2,
-                "network.linear": 64,
-                "network.linear_alpha": 64
+                "network.linear": 32,
+                "network.linear_alpha": 32
             },
             "s": {
-                "train.steps": 2000,
+                "train.steps": 1800,
                 "train.lr": 0.0001,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
@@ -22,11 +22,11 @@
                 "train.lr": 0.0001,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
-                "network.linear_alpha": 128
+                "network.linear": 64,
+                "network.linear_alpha": 64
             },
             "l": {
-                "train.steps": 3000,
+                "train.steps": 3200,
                 "train.lr": 0.00012,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
@@ -34,7 +34,7 @@
                 "network.linear_alpha": 128
             },
             "xl": {
-                "train.steps": 4000,
+                "train.steps": 4500,
                 "train.lr": 0.00015,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
@@ -44,12 +44,12 @@
         },
         "65f7526e4b4dfff9cfd1a961f40e75649d34f085c246d35d0e025bb235bc635d": {
             "xs": {
-                "train.steps": 1500,
+                "train.steps": 1200,
                 "train.lr": 0.0001,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 2,
-                "network.linear": 64,
-                "network.linear_alpha": 64
+                "network.linear": 32,
+                "network.linear_alpha": 32
             },
             "s": {
                 "train.steps": 2000,
@@ -64,11 +64,11 @@
                 "train.lr": 0.0001,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
-                "network.linear_alpha": 128
+                "network.linear": 64,
+                "network.linear_alpha": 64
             },
             "l": {
-                "train.steps": 3000,
+                "train.steps": 3200,
                 "train.lr": 0.00012,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
@@ -76,7 +76,7 @@
                 "network.linear_alpha": 128
             },
             "xl": {
-                "train.steps": 4000,
+                "train.steps": 4500,
                 "train.lr": 0.00015,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
