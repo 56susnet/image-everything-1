@@ -1433,15 +1433,15 @@
         },
         "70ff32b896771e2c67412f6a8299e0bf831705bb714af7e810c1466de783cdd0": {
             "xs": {
-                "max_train_epochs": 42,
+                "max_train_epochs": 46,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 2,
-                "unet_lr": 0.85,
-                "text_encoder_lr": 0.85,
+                "unet_lr": 0.93,
+                "text_encoder_lr": 0.93,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 30,
+                "lr_warmup_steps": 20,
                 "min_snr_gamma": 5,
-                "caption_dropout_rate": 0.05,
+                "caption_dropout_rate": 0.02,
                 "loss_type": "huber",
                 "huber_c": 0.1,
                 "huber_schedule": "snr",
@@ -1449,22 +1449,22 @@
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.5",
-                    "weight_decay=0.015",
+                    "d_coef=1.28",
+                    "weight_decay=0.012",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
             },
             "s": {
-                "max_train_epochs": 35,
+                "max_train_epochs": 46,
                 "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 0.88,
-                "text_encoder_lr": 0.88,
+                "unet_lr": 0.97,
+                "text_encoder_lr": 0.97,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 35,
+                "lr_warmup_steps": 25,
                 "min_snr_gamma": 5,
-                "caption_dropout_rate": 0.05,
+                "caption_dropout_rate": 0.02,
                 "loss_type": "huber",
                 "huber_c": 0.1,
                 "huber_schedule": "snr",
@@ -1472,8 +1472,8 @@
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.45",
-                    "weight_decay=0.014",
+                    "d_coef=1.22",
+                    "weight_decay=0.012",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
@@ -1498,15 +1498,15 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 26,
+                "max_train_epochs": 30,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.05,
-                "text_encoder_lr": 1.05,
+                "unet_lr": 1.1,
+                "text_encoder_lr": 1.1,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 60,
-                "min_snr_gamma": 5,
-                "caption_dropout_rate": 0.05,
+                "lr_warmup_steps": 75,
+                "min_snr_gamma": 6,
+                "caption_dropout_rate": 0.01,
                 "loss_type": "huber",
                 "huber_c": 0.1,
                 "huber_schedule": "snr",
@@ -1515,7 +1515,7 @@
                 "optimizer_args": [
                     "decouple=True",
                     "d_coef=1.05",
-                    "weight_decay=0.012",
+                    "weight_decay=0.01",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
