@@ -1147,13 +1147,13 @@
         },
         "d90d3201d5b2ca617d1b34ddc57d124b19d33b98cf1e653299b9b6c849acb69b": {
             "xs": {
-                "max_train_epochs": 30,
-                "train_batch_size": 6,
+                "max_train_epochs": 43,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 0.9,
                 "text_encoder_lr": 0.9,
                 "lr_scheduler": "constant",
-                "min_snr_gamma": 5,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
