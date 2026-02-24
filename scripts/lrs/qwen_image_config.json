@@ -2,96 +2,116 @@
     "data": {
         "f5eea20a2dbc9e3de97243d3ff8935c349fbb4637e4378e43ed2f57ba379cbb7": {
             "xs": {
-                "train.steps": 1500,
-                "train.lr": 0.00015,
-                "train.batch_size": 1,
+                "train.steps": 2500,
+                "train.lr": 3e-5,
+                "train.batch_size": 4,
                 "train.gradient_accumulation": 1,
+                "train.cfg_scale": 5.0,
                 "network.linear": 64,
-                "network.linear_alpha": 64,
-                "save.save_every": 200
+                "network.linear_alpha": 128,
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "s": {
-                "train.steps": 2000,
-                "train.lr": 0.00012,
-                "train.batch_size": 1,
+                "train.steps": 2500,
+                "train.lr": 3e-5,
+                "train.batch_size": 4,
                 "train.gradient_accumulation": 1,
-                "network.linear": 96,
-                "network.linear_alpha": 96,
-                "save.save_every": 250
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
+                "network.linear_alpha": 128,
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "m": {
                 "train.steps": 2500,
-                "train.lr": 0.0001,
-                "train.batch_size": 1,
+                "train.lr": 3e-5,
+                "train.batch_size": 4,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
                 "network.linear_alpha": 128,
-                "save.save_every": 250
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "l": {
-                "train.steps": 3000,
-                "train.lr": 0.00008,
-                "train.batch_size": 2,
+                "train.steps": 2500,
+                "train.lr": 3e-5,
+                "train.batch_size": 4,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
                 "network.linear_alpha": 128,
-                "save.save_every": 300
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "xl": {
-                "train.steps": 3500,
-                "train.lr": 0.00006,
-                "train.batch_size": 2,
+                "train.steps": 2500,
+                "train.lr": 3e-5,
+                "train.batch_size": 4,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
                 "network.linear_alpha": 128,
-                "save.save_every": 350
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             }
         },
         "65f7526e4b4dfff9cfd1a961f40e75649d34f085c246d35d0e025bb235bc635d": {
             "xs": {
-                "train.steps": 1500,
-                "train.lr": 0.00015,
+                "train.steps": 2500,
+                "train.lr": 5e-5,
                 "train.batch_size": 1,
                 "train.gradient_accumulation": 1,
+                "train.cfg_scale": 5.0,
                 "network.linear": 64,
-                "network.linear_alpha": 64,
-                "save.save_every": 200
+                "network.linear_alpha": 128,
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "s": {
-                "train.steps": 2000,
-                "train.lr": 0.00012,
-                "train.batch_size": 1,
+                "train.steps": 2500,
+                "train.lr": 4e-5,
+                "train.batch_size": 2,
                 "train.gradient_accumulation": 1,
-                "network.linear": 96,
-                "network.linear_alpha": 96,
-                "save.save_every": 250
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
+                "network.linear_alpha": 128,
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "m": {
                 "train.steps": 2500,
-                "train.lr": 0.0001,
-                "train.batch_size": 1,
+                "train.lr": 3.5e-5,
+                "train.batch_size": 2,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
                 "network.linear_alpha": 128,
-                "save.save_every": 250
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "l": {
-                "train.steps": 3000,
-                "train.lr": 0.00008,
-                "train.batch_size": 2,
+                "train.steps": 2500,
+                "train.lr": 3e-5,
+                "train.batch_size": 3,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
                 "network.linear_alpha": 128,
-                "save.save_every": 300
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             },
             "xl": {
-                "train.steps": 3500,
-                "train.lr": 0.00006,
-                "train.batch_size": 2,
+                "train.steps": 2500,
+                "train.lr": 3e-5,
+                "train.batch_size": 4,
                 "train.gradient_accumulation": 1,
-                "network.linear": 128,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
                 "network.linear_alpha": 128,
-                "save.save_every": 350
+                "save.save_every": 250,
+                "save.max_step_saves_to_keep": 2
             }
         }
     }
