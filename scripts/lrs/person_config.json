@@ -2440,20 +2440,20 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 14,
+                "max_train_epochs": 19,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 0.9,
-                "text_encoder_lr": 0.9,
+                "unet_lr": 1.1,
+                "text_encoder_lr": 1.1,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 30,
-                "min_snr_gamma": 7,
+                "lr_warmup_steps": 75,
+                "min_snr_gamma": 6,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.2",
-                    "weight_decay=0.015",
+                    "d_coef=1.0",
+                    "weight_decay=0.01",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
