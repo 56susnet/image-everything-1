@@ -1181,21 +1181,22 @@
                 ]
             },
             "s": {
-                "max_train_epochs": 33,
+                "max_train_epochs": 30,
                 "train_batch_size": 6,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 2.94e-05,
                 "text_encoder_lr": 1.2e-06,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 50,
-                "min_snr_gamma": 6,
+                "lr_warmup_steps": 40,
+                "min_snr_gamma": 5,
                 "noise_offset": 0.025,
                 "noise_offset_type": "Original",
+                "caption_dropout_rate": 0.05,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.00012",
+                    "weight_decay=0.0001",
                     "eps=1e-08"
                 ]
             },
@@ -1240,21 +1241,22 @@
                 ]
             },
             "xl": {
-                "max_train_epochs": 11,
+                "max_train_epochs": 10,
                 "train_batch_size": 12,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 4.2e-05,
                 "text_encoder_lr": 2e-06,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 120,
-                "min_snr_gamma": 6,
+                "lr_warmup_steps": 100,
+                "min_snr_gamma": 5,
                 "noise_offset": 0.04,
                 "noise_offset_type": "Original",
+                "caption_dropout_rate": 0.05,
                 "max_data_loader_n_workers": 8,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.0001",
+                    "weight_decay=0.00008",
                     "eps=1e-08"
                 ]
             }
