@@ -2440,8 +2440,8 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 19,
-                "train_batch_size": 10,
+                "max_train_epochs": 38,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.1,
                 "text_encoder_lr": 1.1,
