@@ -2385,18 +2385,18 @@
         },
         "e4308bdead0e824ea25e37c6caf771f231428975d33316496452c56a34757409": {
             "xs": {
-                "max_train_epochs": 35,
-                "train_batch_size": 4,
-                "gradient_accumulation_steps": 2,
-                "unet_lr": 0.8,
-                "text_encoder_lr": 0.8,
+                "max_train_epochs": 45,
+                "train_batch_size": 6,
+                "gradient_accumulation_steps": 1,
+                "unet_lr": 0.9,
+                "text_encoder_lr": 0.9,
                 "lr_scheduler": "constant",
-                "min_snr_gamma": 6,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.3",
+                    "d_coef=1.2",
                     "weight_decay=0.015",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
@@ -2440,20 +2440,20 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 19,
+                "max_train_epochs": 14,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.1,
-                "text_encoder_lr": 1.1,
+                "unet_lr": 0.9,
+                "text_encoder_lr": 0.9,
                 "lr_scheduler": "constant_with_warmup",
-                "lr_warmup_steps": 75,
-                "min_snr_gamma": 6,
+                "lr_warmup_steps": 30,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
                     "decouple=True",
-                    "d_coef=1.0",
-                    "weight_decay=0.01",
+                    "d_coef=1.2",
+                    "weight_decay=0.015",
                     "use_bias_correction=True",
                     "safeguard_warmup=True"
                 ]
