@@ -2936,13 +2936,13 @@
         },
         "756995ded1a0cd274a3cf4bdb5df47926993806cc19bed0a808a4a211545ab95": {
             "xs": {
-                "max_train_epochs": 29,
-                "train_batch_size": 4,
-                "gradient_accumulation_steps": 2,
-                "unet_lr": 0.8,
-                "text_encoder_lr": 0.8,
+                "max_train_epochs": 40,
+                "train_batch_size": 8,
+                "gradient_accumulation_steps": 1,
+                "unet_lr": 0.9,
+                "text_encoder_lr": 0.9,
                 "lr_scheduler": "constant",
-                "min_snr_gamma": 5,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
@@ -2991,14 +2991,14 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 16,
+                "max_train_epochs": 27,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 1.1,
-                "text_encoder_lr": 1.1,
+                "unet_lr": 1.05,
+                "text_encoder_lr": 1.05,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 75,
-                "min_snr_gamma": 5,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
