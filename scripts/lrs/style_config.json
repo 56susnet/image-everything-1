@@ -2030,10 +2030,10 @@
         },
         "46bc6498a086646889d92058d7e50398177841349bfce3181bdb5846849354b7": {
             "xs": {
-                "max_train_epochs": 32,
+                "max_train_epochs": 36,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 2,
-                "unet_lr": 2.8e-05,
+                "unet_lr": 3.0e-05,
                 "text_encoder_lr": 1.2e-06,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 50,
@@ -2044,7 +2044,7 @@
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.0001",
+                    "weight_decay=0.00008",
                     "eps=1e-08"
                 ]
             },
