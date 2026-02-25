@@ -2030,21 +2030,21 @@
         },
         "46bc6498a086646889d92058d7e50398177841349bfce3181bdb5846849354b7": {
             "xs": {
-                "max_train_epochs": 40,
+                "max_train_epochs": 44,
                 "train_batch_size": 4,
                 "gradient_accumulation_steps": 2,
-                "unet_lr": 3.2e-05,
-                "text_encoder_lr": 1.5e-06,
+                "unet_lr": 2.8e-05,
+                "text_encoder_lr": 1.2e-06,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 60,
+                "lr_warmup_steps": 55,
                 "min_snr_gamma": 5,
-                "noise_offset": 0.03,
+                "noise_offset": 0.025,
                 "noise_offset_type": "Original",
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
                     "betas=(0.9, 0.999)",
-                    "weight_decay=0.00006",
+                    "weight_decay=0.00007",
                     "eps=1e-08"
                 ]
             },
