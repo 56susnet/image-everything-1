@@ -2936,8 +2936,8 @@
         },
         "756995ded1a0cd274a3cf4bdb5df47926993806cc19bed0a808a4a211545ab95": {
             "xs": {
-                "max_train_epochs": 35,
-                "train_batch_size": 4,
+                "max_train_epochs": 44,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 2,
                 "unet_lr": 0.8,
                 "text_encoder_lr": 0.8,

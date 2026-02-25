@@ -391,13 +391,13 @@
         "756995ded1a0cd274a3cf4bdb5df47926993806cc19bed0a808a4a211545ab95": {
             "xs": {
                 "max_train_epochs": 50,
-                "train_batch_size": 4,
-                "gradient_accumulation_steps": 2,
-                "unet_lr": 2.2e-05,
+                "train_batch_size": 10,
+                "gradient_accumulation_steps": 1,
+                "unet_lr": 3.2e-05,
                 "text_encoder_lr": 1e-06,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 25,
-                "min_snr_gamma": 5,
+                "min_snr_gamma": 6,
                 "noise_offset": 0.02,
                 "noise_offset_type": "Original",
                 "max_data_loader_n_workers": 4,
