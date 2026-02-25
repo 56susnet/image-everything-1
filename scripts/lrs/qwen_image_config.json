@@ -4,7 +4,10 @@
             "xs": {},
             "s": {
                 "train.steps": 3000,
-                "train.cfg_scale": 5.0
+                "train.lr": 5e-5,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
+                "network.linear_alpha": 128
             },
             "m": {},
             "l": {},
@@ -14,7 +17,10 @@
             "xs": {},
             "s": {
                 "train.steps": 3000,
-                "train.cfg_scale": 5.0
+                "train.lr": 5e-5,
+                "train.cfg_scale": 5.0,
+                "network.linear": 64,
+                "network.linear_alpha": 128
             },
             "m": {},
             "l": {},
