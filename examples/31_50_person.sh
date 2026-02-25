@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="22b8c9a1-1ae7-4484-83ba-e8b1b8ebaccc"
-MODEL="SG161222/RealVisXL_V4.0"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/0ac123971d0dba62_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260219%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260219T212720Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0055ed0a7722452185d64b044a626be0cb33c20bc78ff7128228065d104301fe"
+TASK_ID=""
+MODEL=""
+DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="training_person_31_50_dancil_31_50"
+EXPECTED_REPO_NAME=""
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
