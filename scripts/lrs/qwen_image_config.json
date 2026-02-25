@@ -4,10 +4,9 @@
             "xs": {},
             "s": {
                 "train.steps": 3000,
-                "train.lr": 5e-5,
+                "train.lr": 1e-4,
                 "train.cfg_scale": 5.0,
-                "network.linear": 64,
-                "network.linear_alpha": 128
+                "network.linear": 64
             },
             "m": {},
             "l": {},
@@ -17,10 +16,9 @@
             "xs": {},
             "s": {
                 "train.steps": 3000,
-                "train.lr": 5e-5,
+                "train.lr": 1e-4,
                 "train.cfg_scale": 5.0,
-                "network.linear": 64,
-                "network.linear_alpha": 128
+                "network.linear": 64
             },
             "m": {},
             "l": {},
