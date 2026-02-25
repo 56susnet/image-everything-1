@@ -2214,7 +2214,7 @@
             },
             "s": {
                 "max_train_epochs": 27,
-                "train_batch_size": 6,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 0.92,
                 "text_encoder_lr": 0.92,
