@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 TASK_ID=""
 MODEL=""
 DATASET_ZIP=""
