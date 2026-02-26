@@ -350,11 +350,11 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 15,
-                "train_batch_size": 10,
+                "max_train_epochs": 35,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 3.6e-05,
-                "text_encoder_lr": 1.8e-06,
+                "unet_lr": 4e-05,
+                "text_encoder_lr": 2e-06,
                 "lr_scheduler": "cosine",
                 "lr_warmup_steps": 100,
                 "min_snr_gamma": 5,
