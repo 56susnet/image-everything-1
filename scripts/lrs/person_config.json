@@ -2100,9 +2100,9 @@
         },
         "162748f97994bc2ffaafdcfd900e06e245e85a9826fb77aa8568846fb6b3f15d": {
             "xs": {
-                "max_train_epochs": 50,
-                "train_batch_size": 4,
-                "gradient_accumulation_steps": 2,
+                "max_train_epochs": 40,
+                "train_batch_size": 7,
+                "gradient_accumulation_steps": 1,
                 "unet_lr": 0.9,
                 "text_encoder_lr": 0.9,
                 "lr_scheduler": "constant",
@@ -2955,8 +2955,8 @@
         },
         "756995ded1a0cd274a3cf4bdb5df47926993806cc19bed0a808a4a211545ab95": {
             "xs": {
-                "max_train_epochs": 29,
-                "train_batch_size": 4,
+                "max_train_epochs": 44,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 2,
                 "unet_lr": 0.8,
                 "text_encoder_lr": 0.8,
@@ -3010,14 +3010,14 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 16,
+                "max_train_epochs": 28,
                 "train_batch_size": 10,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.1,
                 "text_encoder_lr": 1.1,
                 "lr_scheduler": "constant_with_warmup",
                 "lr_warmup_steps": 75,
-                "min_snr_gamma": 5,
+                "min_snr_gamma": 7,
                 "max_data_loader_n_workers": 6,
                 "optimizer_type": "prodigy",
                 "optimizer_args": [
