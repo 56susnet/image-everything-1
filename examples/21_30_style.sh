@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TASK_ID="54ffa7b1-2f9e-45fd-a201-406a90ecbeb0"
-MODEL="ehristoforu/Visionix-alpha"
-DATASET_ZIP="https://s3.eu-central-003.backblazeb2.com/gradients-validator/efceb23b68597a88_train_data.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=00362e8d6b742200000000002%2F20260206%2Feu-central-003%2Fs3%2Faws4_request&X-Amz-Date=20260206T130413Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eb8ea41fb6e1f2fe280fc88ff7c33608a8a658156e3b264345981a995d5210ef"
+TASK_ID=""
+MODEL=""
+DATASET_ZIP=""
 MODEL_TYPE="sdxl"
-EXPECTED_REPO_NAME="test_21_30style"
+EXPECTED_REPO_NAME=""
 
 HUGGINGFACE_TOKEN=""
 HUGGINGFACE_USERNAME=""
