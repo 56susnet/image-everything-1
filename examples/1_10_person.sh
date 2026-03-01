@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TASK_ID=""
+TASK_ID="j
 MODEL=""
 DATASET_ZIP=""
 MODEL_TYPE="sdxl"
