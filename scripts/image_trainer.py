@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-everything u are 7
+everything u are 1
 """
 
 import argparse
@@ -419,3 +419,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+#fuck you copiers
