@@ -1107,8 +1107,8 @@
                 ]
             },
             "l": {
-                "max_train_epochs": 26,
-                "train_batch_size": 6,
+                "max_train_epochs": 36,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 1.0,
                 "text_encoder_lr": 1.0,
