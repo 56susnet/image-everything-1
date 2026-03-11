@@ -983,16 +983,18 @@
                 ]
             },
             "s": {
-                "max_train_epochs": 22,
-                "train_batch_size": 6,
+                "max_train_epochs": 30,
+                "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
-                "unet_lr": 2e-05,
-                "text_encoder_lr": 1e-06,
+                "unet_lr": 1.8e-05,
+                "text_encoder_lr": 8e-07,
                 "lr_scheduler": "cosine",
-                "lr_warmup_steps": 100,
+                "lr_warmup_steps": 120,
                 "min_snr_gamma": 6,
                 "noise_offset": 0.015,
                 "noise_offset_type": "Original",
+                "caption_dropout_rate": 0.1,
+                "num_repeats": 20,
                 "max_data_loader_n_workers": 4,
                 "optimizer_type": "adamw",
                 "optimizer_args": [
