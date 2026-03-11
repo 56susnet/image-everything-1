@@ -983,8 +983,8 @@
                 ]
             },
             "s": {
-                "max_train_epochs": 32,
-                "train_batch_size": 6,
+                "max_train_epochs": 33,
+                "train_batch_size": 7,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 2.8e-05,
                 "text_encoder_lr": 1.2e-06,
