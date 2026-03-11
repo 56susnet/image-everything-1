@@ -983,7 +983,7 @@
                 ]
             },
             "s": {
-                "max_train_epochs": 43,
+                "max_train_epochs": 18,
                 "train_batch_size": 8,
                 "gradient_accumulation_steps": 1,
                 "unet_lr": 3.0e-05,
